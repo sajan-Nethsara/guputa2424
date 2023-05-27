@@ -13,6 +13,7 @@
     "axios": "^1.4.0",
     "follow-redirects": "^1.15.2",
     "next": "13.4.2",
+    "next-cors": "^1.0.0",
     "openai": "^3.2.1",
     "postcss": "8.4.23",
     "react": "18.2.0",
