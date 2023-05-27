@@ -2,26 +2,161 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+::-webkit-scrollbar {
+  width: 20px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+main{
+  transition: all .9s ease;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: stretch;
+}
+.left-section {
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+.right-section {
+
+  display: block;
+  flex-grow: 11;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+.bg-mycolor{
+  background-color: #4b246b;
+}
+.mycolor{
+  color: #4b246b;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+/* button classes */
+
+.mybutifulbutton {
+ padding: 10px 10px;
+ border-radius: 20px;
+ border: 0;
+ background-color: rgb(241 245 249);
+ box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+ letter-spacing: 1px;
+ text-transform: uppercase;
+ font-size: 12px;
+ transition: all .5s ease;
+}
+.mybutifulbutton:hover {
+  letter-spacing: 3px;
+ background-color: hsl(261deg 80% 48%);
+ color: hsl(0, 0%, 100%);
+ box-shadow: rgb(93 24 220) 0px 7px 20px 0px;
+}
+
+.mybutifulbutton:active {
+  letter-spacing: 3px;
+ background-color: hsl(261deg 80% 48%);
+ color: hsl(0, 0%, 100%);
+ box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+ transform: translateY(10px);
+ transition: 100ms;
+}
+
+/* button classes 2 */
+.mybutifulbutton2 {
+  padding: 10px 10px;
+  border-radius: 20px;
+  border: 0;
+  background-color: rgb(241 245 249);
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: all .3s ease;
+ }
+ .mybutifulbutton2:hover {
+   letter-spacing: 2px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 7px 10px 0px;
+ }
+ 
+ .mybutifulbutton2:active {
+   letter-spacing: 3px;
+  background-color: #5d18dc;
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
+ }
+
+ /* search bar */
+ .search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.search__input {
+  font-family: inherit;
+  font-size: inherit;
+  background-color: #dbdbdb;
+  border: none;
+  color: #000000;
+  padding: 0.7rem 1rem;
+  border-radius: 30px;
+  width: 30em;
+  transition: all ease-in-out .5s;
+  margin-right: -43px;
+  padding-right: 3.1em;
+}
+
+.search__input:hover, .search__input:focus {
+  box-shadow: 0 0 1em #00000013;
+}
+
+.search__input:focus {
+  outline: none;
+  background-color: #d1d1d1;
+}
+
+.search__input::-webkit-input-placeholder {
+  font-weight: 100;
+  color: #797979;
+}
+
+
+.search__button {
+  border: none;
+  background-color: #f4f2f2;
+  margin-top: .1em;
+  margin-bottom: .1em;
+  transition: all ease-in-out .5s;
+}
+
+.search__button:hover {
+  cursor: pointer;
+  background-color: #5d18dc;
+}
+
+.search__icon {
+  padding: 2px;
+  height: 1.3em;
+  width: 1.3em;
+  fill: #5d18dc;
+}
+.search__icon:hover {
+  fill: #f4f2f2;
+}
+.cursorNotAllowed{
+  cursor: not-allowed !important;
 }
