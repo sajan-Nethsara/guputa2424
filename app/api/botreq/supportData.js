@@ -1,7 +1,7 @@
 const Data = {
   translatorAuth :'a_UuncMqFc3xKshtL0EEQiiEJaMM1EsXgI6VZgxK8haEMoDo86yQVH7mFEbgVMTIAusyES2ZevsCmuqZuo',
-  GPT_OrgId: 'org-yk6WpjszPzLmXdqGT5ew08tz',
-  GPT_ApiSecretKey : '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'
+  GPT_OrgId:'org-yk6WpjszPzLmXdqGT5ew08tz',
+  GPT_ApiSecretKey : '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'
 }
 
 /*

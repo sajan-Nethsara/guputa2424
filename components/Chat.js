@@ -9,7 +9,7 @@ const Chat = ({ prompt }) => {
   const [result, setResult] = useState(null);
   useEffect(() => {
     //find the answer for the prompt
-    axios.post('api/botreq',{prompt}).then((res)=>{
+    axios.post('/api/botreq',{prompt}).then((res)=>{
       console.log(res.data.BotMsgSI)
       setResult(res.data.BotMsgSI)
     }).catch((err)=>{
