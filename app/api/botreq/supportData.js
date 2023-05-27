@@ -1,7 +1,7 @@
 const Data = {
   translatorAuth :'a_UuncMqFc3xKshtL0EEQiiEJaMM1EsXgI6VZgxK8haEMoDo86yQVH7mFEbgVMTIAusyES2ZevsCmuqZuo',
   GPT_OrgId:'org-yk6WpjszPzLmXdqGT5ew08tz',
-  GPT_ApiSecretKey : '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'
+  GPT_ApiSecretKey : process.env.GPT_API_KEY
 }
 
 /*
