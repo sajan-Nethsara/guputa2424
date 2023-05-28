@@ -46,7 +46,7 @@ const ChatSpace = () => {
           })}
         </div>
       </div>
-      <div className={`flex `}>
+      <div className={`flex px-4 `}>
         <div className="search mb-5">
         
           <input

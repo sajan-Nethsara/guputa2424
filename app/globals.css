@@ -11,14 +11,12 @@ main{
 }
 .container {
   display: flex;
-  flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: stretch;
   align-content: stretch;
 }
 .left-section {
-  display: flex;
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: auto;
@@ -114,7 +112,6 @@ main{
   color: #000000;
   padding: 0.7rem 1rem;
   border-radius: 30px;
-  width: 30em;
   transition: all ease-in-out .5s;
   margin-right: -43px;
   padding-right: 3.1em;

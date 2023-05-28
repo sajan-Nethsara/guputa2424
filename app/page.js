@@ -19,8 +19,11 @@ export default function Home() {
   console.log(process.env.GUPUTA_KEY)
 
   return (
-    <main className=" container min-h-screen p-8 gap-6 min-w-full bg-slate-100 max-w-[1920px]">
-      <section className='bg-white left-section rounded-xl shadow-2xl flex-col relative'>
+    <main className=" container min-h-screen p-8 gap-6 min-w-full bg-slate-100 max-w-[1920px] sm:flex-row flex-col ">
+      <section className='sm:hidden flex self-center'>
+      <Image src={logo} height={100} width={100} priority alt='the logo of chat-guputa app' className=''/>
+      </section>
+      <section className='bg-white left-section rounded-xl shadow-2xl flex-col relative sm:flex hidden'>
         <div className='flex justify-center '>
           <Image src={logo} height={180} width={180} priority alt='the logo of chat-guputa app' className='mt-7 mb-3'/>
         </div>

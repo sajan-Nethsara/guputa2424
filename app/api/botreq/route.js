@@ -34,7 +34,5 @@ export async function GET(request) {
 
 /*
 org_id = org-yk6WpjszPzLmXdqGT5ew08tz
-api_secret_key = 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
-
-
+api_secret_key = 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   
 */
